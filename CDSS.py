@@ -7,6 +7,9 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         MainWindow.setMinimumSize(QtCore.QSize(800, 600))
         MainWindow.setMaximumSize(QtCore.QSize(800, 600))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("headache.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("color: rgb(255, 255, 255);\n"
 "background-color: #1e1e2f;\n"
 "")
